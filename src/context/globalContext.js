@@ -35,7 +35,7 @@ export const GlobalProvider = ({ children }) => {
     currentTheme:
     typeof window !== "undefined" && window.localStorage.getItem("theme") == null
         ? "dark"
-        : window.localStorage.getItem("theme"),
+        : (typeof window !== "undefined" ? window.localStorage.getItem("theme") : console.log("hey")),
     cursorType: false,
     cursorStyles: ["pointer", "hovered", "locked"],
   })
