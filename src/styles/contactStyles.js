@@ -131,10 +131,6 @@ export const Contact = styled(motion.div)`
 
   .submit {
     background-color: ${props => props.theme.red};
-    @media (max-width: 380px) {
-      padding-left: 0px;
-      width: 250px;
-    }
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
