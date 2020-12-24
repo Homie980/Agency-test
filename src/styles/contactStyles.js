@@ -20,10 +20,13 @@ export const Contact = styled(motion.div)`
     border-radius: 20px;
     @media (max-width: 500px) {
       padding-left: 0px;
+      
     }
 
     @media (max-width: 380px) {
       padding-left: 0px;
+      padding-right: 0px;
+      width: 100%;
     }
     box-sizing: border-box;
     height: 500px;
@@ -55,16 +58,10 @@ export const Contact = styled(motion.div)`
 
   .ic1 {
     margin-top: 40px;
-    @media (max-width: 380px) {
-      width: 250px;
-    }
   }
 
   .ic2 {
     margin-top: 30px;
-    @media (max-width: 380px) {
-      width: 250px;
-    }
   }
 
   .input {

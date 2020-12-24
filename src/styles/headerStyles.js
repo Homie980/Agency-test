@@ -6,6 +6,9 @@ export const HeaderNav = styled(motion.div)`
   width: 100%;
   position: relative;
   top: 72px;
+  @media (max-width: 500px) {
+    top: 35px;
+  }
   right: 0;
   left: 0;
   z-index: 99;

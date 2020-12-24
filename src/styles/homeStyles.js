@@ -17,10 +17,10 @@ export const BannerTitle = styled(motion.h1)`
     bottom: -260px;
   }
   @media (max-width: 500px) {
-    bottom: -250px;
+    bottom: -200px;
   }
   @media (max-width: 400px) {
-    bottom: -270px;
+    bottom: -200px;
   }
   left: 0;
   color: ${props => props.theme.text};
