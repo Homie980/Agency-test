@@ -17,10 +17,10 @@ export const Nav = styled(motion.div)`
 export const NavHeader = styled.div`
   top: 72px;
   position: relative;
-  @media (max-width: 768px) {
-    top: 35px;
-  }
   h2 {
+    @media (max-width: 768px) {
+      top: 35px;
+    }
     color: ${props => props.theme.background};
   }
 `

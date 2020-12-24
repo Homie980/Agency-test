@@ -1,4 +1,3 @@
-import { element, func } from "prop-types"
 import { useState, useEffect } from "react"
 
 export default function useElementPosition(el) {

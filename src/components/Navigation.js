@@ -13,20 +13,19 @@ import {
   CloseNav,
   NavList,
   NavFooter,
-  NavVideos,
 } from "../styles/navigationStyles"
 
 const navRoutes = [
-  {
-    id: 0,
-    title: "Home",
-    path: "/not-humble",
-  },
-  { id: 1, title: "Features", path: "/bleeping-ease" },
+  { id: 1, title: "Features", path: "#features" },
   {
     id: 2,
     title: "About",
-    path: "/make-it-zero",
+    path: "#about",
+  },
+  {
+    id: 3,
+    title: "Contact",
+    path: "#contact",
   },
 ]
 
@@ -44,7 +43,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
             <Container>
               <NavHeader>
                 <Flex spaceBetween noHeight>
-                  <h2>Projects</h2>
+                  <h2>STARFISH</h2>
                   <CloseNav
                     onClick={() => setToggleMenu(!toggleMenu)}
                     onMouseEnter={() => onCursor("pointer")}
@@ -65,8 +64,9 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                       onMouseLeave={onCursor}
                       key={route.id}
                     >
-                      <Link to={`/projects/${route.path}`}>
+                      <Link to={`${route.path}`}>
                         <motion.div
+                          onClick={() => setToggleMenu(!toggleMenu)}
                           initial={{ x: -108 }}
                           whileHover={{
                             x: -40,

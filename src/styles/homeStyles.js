@@ -10,27 +10,17 @@ export const Banner = styled.div`
   margin-bottom: 296px;
 `
 
-export const Video = styled.div`
-  height: 100%;
-  width: 100%;
-  video {
-    object-fit: cover;
-  }
-`
-
-export const Canvas = styled.canvas`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: block;
-`
-
 export const BannerTitle = styled(motion.h1)`
   position: absolute;
-  bottom: -19vh;
+  bottom: -23vh;
+  @media (max-width: 1370px) {
+    bottom: -260px;
+  }
+  @media (max-width: 500px) {
+    bottom: -250px;
+  }
   @media (max-width: 400px) {
-    bottom: -200px;
+    bottom: -270px;
   }
   left: 0;
   color: ${props => props.theme.text};
@@ -51,6 +41,9 @@ export const HomeContentSection = styled(motion.div)`
   @media (max-width: 768) {
     margin-bottom: 0;
   }
+  #section-padding {
+    paddding: 7% 15%;
+  }
 `
 
 export const Content = styled.h2`
@@ -59,81 +52,25 @@ export const Content = styled.h2`
   font-weight: 400;
   margin-left: 124px;
   color: ${props => props.theme.text};
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
+    width: 80%;
+    font-size: 1.9rem;
+  }
+  @media (max-width: 500px) {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 `
-
-// export const HomeFeaturedSection = styled(motion.div)`
-//   margin-bottom: 200px;
-//   position: relative;
-//   a {
-//     margin-bottom: 200px;
-//     position: relative;
-//     display: block;
-//   }
-// `
-
-// export const FeaturedVideo = styled.div`
-//   position: absolute;
-//   z-index: -1;
-//   width: 100%;
-//   height: 480px;
-//   top: 0;
-//   display: block;
-//   overflow: hidden;
-// `
-// export const FeaturedProjects = styled.div`
-//   margin-top: 200px;
-//   button {
-//     background: ${props => props.theme.red};
-//     color: #fff;
-//     position: relative;
-//     padding: 20px;
-//     display: block;
-//     text-align: left;
-//     font-size: 1.4rem;
-//     line-height: 1;
-//     font-weight: 600;
-//     border: none;
-//     span {
-//       margin-right: 100px;
-//       display: block;
-//     }
-//     &:before, &:after {
-//       content: '';
-//       position: absolute;
-//       top: 50%;
-//       right: 20px;
-//       width: 35px;
-//       height: 7px;
-//       display: block;
-//       background: #fff;
-//       transform: translateY(-50%);
-//     }
-//     &:before {
-//       margin-top: -8px;
-//     }
-//     &:after {
-//       margin-top: 8px;
-//     }
-//   }
-// `
 
 // About
-export const HomeAboutSection = styled(motion.div)`
-
-`
+export const HomeAboutSection = styled(motion.div)``
 export const About = styled.div`
   width: 100%;
   h2 {
@@ -142,17 +79,20 @@ export const About = styled.div`
     font-weight: 400;
     margin-left: 124px;
     color: ${props => props.theme.text};
-    @media (max-width: 768px) {
-      font-size: 2rem;
-      text-align: center;
-      margin: 20px auto;
-      width: 100%;
+    @media (max-width: 1024px) {
+      width: 80%;
+      font-size: 1.9rem;
     }
-    @media (max-width: 600px) {
-      font-size: 1.7rem;
-      text-align: center;
-      margin: 20px auto;
+    @media (max-width: 500px) {
       width: 100%;
+      margin-left: 0;
+      font-size: 1.9rem;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
+      margin-left: 0;
+      font-size: 1.4rem;
     }
   }
   p {
@@ -183,11 +123,10 @@ export const Services = styled.div`
   }
 `
 
-
 // Accordion
 export const AccordionHeader = styled(motion.div)`
   width: 100%;
-  color:${props => props.theme.red};
+  color: ${props => props.theme.red};
   height: 32px;
   display: flex;
   align-items: center;
@@ -219,4 +158,3 @@ export const AccordionContent = styled(motion.div)`
     font-weight: 300;
   }
 `
-

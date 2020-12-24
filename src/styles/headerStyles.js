@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 export const HeaderNav = styled(motion.div)`
   height: 0px;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 72px;
   right: 0;
   left: 0;
@@ -15,7 +15,7 @@ export const Logo = styled.div`
   a {
     font-size: 1.8rem;
     font-weight: 800;
-    color: ${props => props.theme.text}
+    color: ${props => props.theme.text};
   }
 
   @media (max-width: 768px) {

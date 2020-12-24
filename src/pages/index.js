@@ -4,6 +4,7 @@ import HomeBanner from "../components/homePage/HomeBanner"
 import HomeContent from '../components/homePage/HomeContent'
 import Layout from "../components/layout"
 import HomeAbout from "../components/homePage/HomeAbout";
+import ContactForm from "../components/ContactForm";
 //Context
 import {useGlobalStateContext, useGlobalDispatchContext} from '../context/globalContext';
 
@@ -19,6 +20,7 @@ const IndexPage = props => {
       <HomeBanner onCursor={onCursor} />
       <HomeContent />
       <HomeAbout onCursor={onCursor} />
+      <ContactForm onCursor={onCursor}/>
     </Layout>
   ) 
 }

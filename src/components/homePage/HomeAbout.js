@@ -116,7 +116,7 @@ const HomeAbout = ({ onCursor }) => {
               are you?
             </p>
           </About>
-          <Services>
+          <Services id="about">
             <h3>Services</h3>
             {accordionIds.map((details, index) => (
               <Accordion
