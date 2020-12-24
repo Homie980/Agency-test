@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <ThemeProvider theme={currentTheme}>
+    <ThemeProvider theme={currentTheme === "dark" ? darkTheme : darkTheme}> // Leave it to that
       <GlobalStyle />
       <Cursor toggleMenu={toggleMenu} />
       <Header
