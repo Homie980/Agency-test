@@ -14,23 +14,18 @@ const Footer = ({ onCursor }) => {
             <a
               onMouseEnter={() => onCursor("hovered")}
               onMouseLeave={onCursor}
-              href="/"
+              href="https://www.instagram.com/starfishmarketing_/"
+              target="_blank"
             >
               <Instagram />
             </a>
             <a
               onMouseEnter={() => onCursor("hovered")}
               onMouseLeave={onCursor}
-              href="/"
+              href="https://www.facebook.com/starfishmarketingagnecy"
+              target="_blank"
             >
               <Facebook />
-            </a>
-            <a
-              onMouseEnter={() => onCursor("hovered")}
-              onMouseLeave={onCursor}
-              href="/"
-            >
-              <Vimeo />
             </a>
           </FooterSocial>
         </Flex>

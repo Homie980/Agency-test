@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
   const darkTheme = {
     background: "#000",
     text: "#fff",
-    red: "#ea291e",
+    red: "#F26522",
     left: `${hamburgerPosition.x}px`,
     top: `${hamburgerPosition.y}px`,
   }
@@ -67,7 +67,7 @@ const Layout = ({ children }) => {
   const lightTheme = {
     background: "#fff",
     text: "#000",
-    red: "#ea291e",
+    red: "#F26522",
     left: `${hamburgerPosition.x}px`,
     top: `${hamburgerPosition.y}px`,
   }

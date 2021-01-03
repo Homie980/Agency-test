@@ -17,12 +17,13 @@ export const Nav = styled(motion.div)`
 export const NavHeader = styled.div`
   top: 72px;
   position: relative;
-  h2 {
-    @media (max-width: 768px) {
-      top: 35px;
+    img {
+      width: 128px;
+      height: auto;
+      @media (max-width: 768px) {
+        top: 35px;
+      }
     }
-    color: ${props => props.theme.background};
-  }
 `
 
 export const CloseNav = styled.div`

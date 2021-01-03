@@ -53,13 +53,12 @@ const Header = ({
             onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor}
           >
-            <Link to="/">STAR</Link>
-            <Link to="/">FISH</Link>
-            <span
+            <Link to="/"><div className="site-logo"><img src="https://i.ibb.co/3FgTFpx/starfish-Recovered.png"></img></div></Link>
+            {/* <span
               onClick={toggleTheme}
               onMouseEnter={() => onCursor("pointer")}
               onMouseLeave={onCursor}
-            ></span>
+            ></span> */}
           </Logo>
           <Menu
             ref={hamburger}

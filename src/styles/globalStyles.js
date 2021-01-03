@@ -30,7 +30,7 @@ export const Flex = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-flow: column wrap;
     align-items: center;
   }

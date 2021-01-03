@@ -16,6 +16,7 @@ export const FooterContent = styled.div`
     `}
 `
 export const FooterSocial = styled.div`
+  
   display: flex;
   position: relative;
   a {

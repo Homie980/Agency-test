@@ -43,7 +43,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
             <Container>
               <NavHeader>
                 <Flex spaceBetween noHeight>
-                  <h2>STARFISH</h2>
+                <div className="site-logo"><img src="https://i.ibb.co/mc2QYg1/starfish-logo-nav.png"></img></div>
                   <CloseNav
                     onClick={() => setToggleMenu(!toggleMenu)}
                     onMouseEnter={() => onCursor("pointer")}
@@ -102,23 +102,18 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                     <a
                       onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}
-                      href="/"
+                      href="https://www.instagram.com/starfishmarketing_/"
+                      target="_blank"
                     >
                       <Instagram />
                     </a>
                     <a
                       onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}
-                      href="/"
+                      href="https://www.facebook.com/starfishmarketingagnecy"
+                      target="_blank"
                     >
                       <Facebook />
-                    </a>
-                    <a
-                      onMouseEnter={() => onCursor("pointer")}
-                      onMouseLeave={onCursor}
-                      href="/"
-                    >
-                      <Vimeo />
                     </a>
                   </FooterSocial>
                   <FooterContent>

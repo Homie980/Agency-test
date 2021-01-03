@@ -32,7 +32,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon:
-          "src/assets/icons/logo-website-website-icon-with-png-and-vector-format-for-unlimited-22.png",
+          "src/assets/svg/starfish(site-icon).svg",
       },
     },
     `gatsby-plugin-styled-components`,

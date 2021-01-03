@@ -21,9 +21,11 @@ export const Logo = styled.div`
     color: ${props => props.theme.text};
   }
 
-  @media (max-width: 768px) {
-    margin-top: 20px;
+  img {
+    width: 128px;
+    height: auto;
   }
+
 
   span {
     height: 1rem;

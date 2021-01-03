@@ -2,7 +2,18 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 
 // Banner
-export const Banner = styled.div`
+export const Banner = styled(motion.div)`
+  .header-logo {
+    position: absolute;
+    right: 0;
+    @media (min-width: 768px) {
+      top: 200px;
+    }
+    @media (min-width: 1368px) {
+      top: 250px;
+      right: 80px;
+    }
+  }
   background: ${props => props.theme.background};
   height: 100vh;
   width: 100%;
@@ -11,6 +22,7 @@ export const Banner = styled.div`
 `
 
 export const BannerTitle = styled(motion.h1)`
+  z-index: 1;
   position: absolute;
   bottom: -23vh;
   @media (max-width: 1370px) {
@@ -72,7 +84,6 @@ export const Content = styled.h2`
 // About
 export const HomeAboutSection = styled(motion.div)``
 export const About = styled.div`
-  width: 100%;
   h2 {
     width: 60%;
     font-size: 2.3rem;
@@ -101,12 +112,11 @@ export const About = styled.div`
     line-height: 1.17;
     margin-left: 124px;
     color: ${props => props.theme.text};
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       line-height: 1.54;
-      margin-left: 0;
-      text-align: center;
+      margin-left: 124px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       line-height: 1.2;
       text-align: center;
       margin: 0 auto;
@@ -117,6 +127,7 @@ export const Services = styled.div`
   h3 {
     color: ${props => props.theme.text};
   }
+  width: 80%;
 
   @media (max-width: 768px) {
     margin-top: 11vh;
@@ -148,6 +159,7 @@ export const AccordionIcon = styled.div`
 `
 export const AccordionContent = styled(motion.div)`
   overflow: hidden;
+  width: 60%;
   padding-left: 40px;
   span {
     width: 100%;

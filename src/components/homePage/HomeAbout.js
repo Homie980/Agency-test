@@ -18,55 +18,23 @@ import { useGlobalStateContext } from "../../context/globalContext"
 const accordionIds = [
   {
     id: 0,
-    title: "Pre-Production",
+    title: "Branding & Positioning",
     results: [
-      "Creative Development",
-      "Writing",
-      "Creative Development",
-      "Writing",
-      "Storyboards",
-      "Art Direction",
-      "Creative Direction",
-      "Location Scouting",
-      "Casting",
+      "Branding &Positioning your brand in the right place to reach the right audience.",
     ],
   },
   {
     id: 1,
-    title: "Video Production",
+    title: "Content Creation",
     results: [
-      "Principle Photography",
-      "Production Management",
-      "Crew",
-      "Dailies",
-      "LTO-Archiving",
+      "We are fearful hunters. We stalk and hunt your target audience through all of your social media accounts. And by the end of our time together, you’ll have a Net full of clients and achieved sales targets. In a less dramatic manner  Through tons of research and hard digging, We create content that matches your brand identity and grapes your favorite client’s attention.",
     ],
   },
   {
     id: 2,
-    title: "Post-Production",
+    title: "Media Production",
     results: [
-      "Colour correction",
-      "Offline editing",
-      "Online editing",
-      "VFX",
-      "Animation and motion graphics",
-      "Closed captioning and subtitles",
-      "Descriptive video",
-      "Dailies",
-      "Quality control",
-      "LTO Archiving",
-    ],
-  },
-  {
-    id: 3,
-    title: "Audio Post-Production",
-    results: [
-      "We work with some amazing partners who provide:",
-      "Sound Design",
-      "SFX",
-      "Music",
-      "Sound Mix",
+      "If I told you that smoking kills you probably won’t listen but If I showed you a story of a young boy fighting lung cancer because of his father’s smoking habit , you probably won’t listen either but, It will leave you with the right amount of guilt.",
     ],
   },
 ]
@@ -104,9 +72,9 @@ const HomeAbout = ({ onCursor }) => {
         <Flex>
           <About>
             <h2>
-              Starfish marketing is a five armed marketing strategy offering,
-              Media production, Managment, Professional websites, Branding, and
-              creative solutions.
+              How can we help you? <br /> Each brand have a story, some of them
+              are lucky to figure it out on their own but the rest, Are even
+              more lucky because they have us to figure it out for them.
             </h2>
             <p>
               Everybody's got a story. And we don't stop until we've uncovered
